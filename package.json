@@ -6,15 +6,36 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
+    "animate.css": "^3.7.2",
+    "animate.css-react": "^1.0.0",
+    "body-parser": "^1.19.0",
+    "bulma": "^0.8.0",
+    "eslint": "^6.8.0",
+    "eslint-config-react-app": "^5.2.1",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-flowtype": "^4.6.0",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-node": "^11.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "express": "^4.17.1",
+    "mongoose": "^5.9.5",
+    "prettier": "^2.0.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-scripts": "3.4.1"
+    "react-image-gallery": "^1.0.6",
+    "react-number-format": "^4.4.1",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "3.4.1",
+    "standard": "^14.3.3"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "PORT=3006 react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "prettier": "./node_modules/.bin/prettier --semi=false --single-quote=true --write src/*.js"
   },
   "eslintConfig": {
     "extends": "react-app"
