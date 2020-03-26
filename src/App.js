@@ -23,7 +23,7 @@ function App() {
         <Route exact path="/product/zenbook" component={Zenbook} />
         <Route exact path="/shop/bag" component={Bag} />
         <Route exact path="/buy/id=:id" component={Buy} />
-        <Route exzvt path="*" component={Notfound} />
+        <Route exact path="*" component={Notfound} />
       </Switch>
     </BrowserRouter>
   );

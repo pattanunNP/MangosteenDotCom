@@ -1,0 +1,17 @@
+#root .container-fluid {
+  min-height: 100vh;
+  background-color: #131218;
+  color: #ccc;
+}
+.fallback-image {
+  position: relative;
+  top: -500px;
+  right: 15px;
+  /* height: 362; */
+}
+.text_mac{
+    position: relative;  
+    top: -780px;
+    font-weight: 600;
+    font: bold;
+}
