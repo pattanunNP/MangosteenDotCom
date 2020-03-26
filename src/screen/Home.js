@@ -47,7 +47,7 @@ class Home extends Component{
           <div className="column" style={{ top: "10px" }}>
             <a href="/product/dell-xps">
               <Device
-                Title_text={"XPS"}
+                Title_text={"Dell XPS 13inch"}
                 Sub_title={"World of Edge to Edge Display."}
                 Image_link={"https://res.cloudinary.com/dxih9tfqm/image/upload/v1585076882/images/XPS_gnnwyh.png"}
               />
@@ -58,7 +58,7 @@ class Home extends Component{
           <div className="column" style={{ top: "10px" }}>
             <a href="/product/zenbook">
               <Device
-                Title_text={"ZenBook Pro"}
+                Title_text={"ZenBook Pro DUO"}
                 Sub_title={"Extend the imagition."}
                 Image_link={'https://res.cloudinary.com/dxih9tfqm/image/upload/v1585076882/images/Zenbook2_yzs8xi.png'}
               />
