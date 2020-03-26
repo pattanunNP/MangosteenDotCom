@@ -48,7 +48,7 @@ class Navbar extends Component{
             className="link is-info"
             style={{ color: "white", marginRight: "2px" }}
           >
-            XPS
+            Dell XPS
           </a>
         </h4>
         <h4 className="level-item has-text-centered">
@@ -57,7 +57,7 @@ class Navbar extends Component{
             className="link is-info"
             style={{ color: "white", marginRight: "2px" }}
           >
-            ZenBook
+            Asus ZenBook Pro DUO
           </a>
         </h4>
         <h4 className="level-item has-text-centered">

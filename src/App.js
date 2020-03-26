@@ -8,6 +8,7 @@ import surface from "./screen/surface";
 import XPS from "./screen/xps";
 import Bag from "./screen/bag";
 import Zenbook from "./screen/zenbook";
+import Thank from "./screen/thank";
 import Notfound from "./screen/notfound";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 function App() {
@@ -23,6 +24,7 @@ function App() {
         <Route exact path="/product/zenbook" component={Zenbook} />
         <Route exact path="/shop/bag" component={Bag} />
         <Route exact path="/buy/id=:id" component={Buy} />
+        <Route exact path="/buy/id=:id/thank" component={Thank} />
         <Route exact path="*" component={Notfound} />
       </Switch>
     </BrowserRouter>

@@ -4,10 +4,11 @@ import Devicemac from "../component/device_mac";
 import Device from "../component/device";
 import Animate from "animate.css-react";
 import "animate.css/animate.css";
+import "../component/component_styles/mac.css";
 class Home extends Component{
   render(){
   return (
-    <div>
+    <div id="root" >
       <Animate appear="fadeInDown" durationAppear={500} component="div">
         <Navbar />
       </Animate>

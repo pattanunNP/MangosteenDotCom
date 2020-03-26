@@ -4,12 +4,11 @@ import Navbarmac from "../component/navbar_mac";
 import Animate from "animate.css-react";
 import "animate.css/animate.css";
 import "../component/component_styles/mac.css";
-import "../component/component_styles/surface.css";
 class SurfaceProX extends Component {
   render() {
     return (
       <div id="root">
-        <div class="container-fluid">
+        <div className="container-fluid">
           <Animate appear="fadeInDown" durationAppear={500} component="div">
             <Navbar />
           </Animate>
@@ -27,7 +26,7 @@ class SurfaceProX extends Component {
           <div className="hero">
             <div className="hero-body">
               <Animate appear="fadeInDown" durationAppear={1500}>
-                <h1 id="glow"> Surface Pro X</h1>
+                <h1 className="title" style={{ textAlign: "center", fontSize: "80px" , color: 'white' }}> Surface Pro X</h1>
                 <h1
                   className="subtitle"
                   style={{ textAlign: "center", fontSize: "45px" }}

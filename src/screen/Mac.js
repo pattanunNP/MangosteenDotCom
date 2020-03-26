@@ -13,7 +13,12 @@ function Mac(props) {
           <Navbar />
         </Animate>
         <Animate appear="fadeInDown" durationAppear={500} component="div">
-          <Navbarmac buy_id={1} />
+          <Navbarmac    buy_id={1}
+              product_name={"Macbook Pro"}
+              model={"13 inch model"}
+              text={'Mac Os'}
+              link1 ={'https://www.apple.com/macbook-pro-13/macos/'}
+              link2={'https://www.apple.com/macbook-pro-13/specs/b'} />
         </Animate>
 
         <div className="hero">

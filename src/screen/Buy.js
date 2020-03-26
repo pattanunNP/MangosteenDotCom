@@ -3,6 +3,7 @@ import Navbar from "../component/navbar";
 import "animate.css/animate.css";
 import Animate from "animate.css-react";
 import NumberFormat from "react-number-format";
+
 class Buy extends Component {
   constructor(props) {
     super(props);
@@ -12,9 +13,9 @@ class Buy extends Component {
       add: 0,
       add2: 0,
       add3: 0,
-      avalible1: false,
+      avalible1: true,
       avalible2: false,
-      avalible3: false,
+      avalible3: true,
       avalible4: false,
       avalible5: false,
       avalible6: false,
@@ -24,6 +25,7 @@ class Buy extends Component {
       avalible10: false
     };
   }
+
   render() {
     const { static_price, add, add2, add3 } = this.state;
     const sum = static_price + add + add2 + add3;
@@ -35,18 +37,17 @@ class Buy extends Component {
         </Animate>
         <div className="hero">
           <div className="hero-body">
-            <h2 className="title">{this.props.match.params.id}</h2>
-            <a
-              className="subtitle"
-              href="/product/macbook-pro-13"
+            <button
+              className="button is-link is-rounded"
+              onClick={() => this.props.history.goBack()}
               style={{
                 marginLeft: "50px",
                 font: "Bold24px/28px Roboto",
-                color: "#007AFF"
+                color: "white"
               }}
             >
-              &#60;Back
-            </a>
+              <img src={'https://res.cloudinary.com/dxih9tfqm/image/upload/v1585208672/images/back_x694f9.png'}/>  Back
+            </button>
             <div className="columns">
               <div>
                 <div
@@ -91,14 +92,49 @@ class Buy extends Component {
                     />
                   </h1>
                   <button
+                    className="button is-danger"
+                    style={{
+                      marginTop: "50px",
+                      width: "550px"
+                    }}
+                    onClick={() =>
+                      this.setState({
+                        add: 0,
+                        add2: 0,
+                        add3: 0,
+                        avalible1: true,
+                        avalible2: false,
+                        avalible3: true,
+                        avalible4: false,
+                        avalible5: true,
+                        avalible6: false,
+                        avalible7: false,
+                        avalible8: false,
+                        avalible9: false,
+                        avalible10: false
+                      })
+                    }
+                  >
+                    <div className="level-item has-text-centered">
+                      <img
+                        src={
+                          "https://res.cloudinary.com/dxih9tfqm/image/upload/v1585203449/images/undo_yy6woq.png"
+                        }
+                        alt="search_btn"
+                        style={{ color: "white", marginRight: "30px" }}
+                      />
+                    </div>
+                    Clear selected
+                  </button>
+                  <a
                     className="button is-info"
                     style={{
                       marginTop: "50px",
                       width: "550px"
                     }}
+                    href={`/buy/id=${this.props.match.params.id}/thank`}
                   >
                     <div className="level-item has-text-centered">
-
                       <img
                         src={
                           "https://res.cloudinary.com/dxih9tfqm/image/upload/v1585076878/images/bag_hkylh7.png"
@@ -106,12 +142,9 @@ class Buy extends Component {
                         alt="search_btn"
                         style={{ color: "white", marginRight: "30px" }}
                       />
-
                     </div>
                     Add to Bag
-
-                  </button>
-                  
+                  </a>
                 </div>
                 <div
                   className="box"
@@ -216,7 +249,7 @@ class Buy extends Component {
                 >
                   <h1 className="title"> Processor</h1>
                   <p className="subtitle" style={{ color: "#007AFF" }}>
-                    Click to select and DoubleClick to diselect
+                    Click to select and DoubleClick to deselected
                   </p>
                   <button
                     disabled={this.state.avalible1}
@@ -277,18 +310,11 @@ class Buy extends Component {
                 >
                   <h1 className="title"> Memory</h1>
                   <p className="subtitle" style={{ color: "#007AFF" }}>
-                    Click to select and DoubleClick to diselect
+                    Click to select and DoubleClick to deselected
                   </p>
                   <button
                     disabled={this.state.avalible3}
                     onClick={() =>
-                      this.setState({
-                        add3: 0,
-                        avalible3: false,
-                        avalible4: true
-                      })
-                    }
-                    onDoubleClick={() =>
                       this.setState({
                         add3: 0,
                         avalible3: true,
@@ -305,13 +331,6 @@ class Buy extends Component {
                     onClick={() =>
                       this.setState({
                         add3: 7000,
-                        avalible3: true,
-                        avalible4: false
-                      })
-                    }
-                    onDoubleClick={() =>
-                      this.setState({
-                        add3: 0,
                         avalible3: false,
                         avalible4: true
                       })
@@ -341,10 +360,20 @@ class Buy extends Component {
                 >
                   <h1 className="title"> Storage</h1>
                   <p className="subtitle" style={{ color: "#007AFF" }}>
-                    Click to select and DoubleClick to diselect
+                    Click to select and DoubleClick to deselected
                   </p>
                   <button
-                    onClick={() => this.setState({ add: 0 })}
+                    disabled={this.state.avalible5}
+                    onClick={() =>
+                      this.setState({
+                        add: 0,
+                        avalible5: true,
+                        avalible6: false,
+                        avalible7: false,
+                        avalible8: false,
+                        avalible9: false
+                      })
+                    }
                     className="button is-info is-outlined is-large"
                     style={{
                       marginTop: "20px",
@@ -355,7 +384,17 @@ class Buy extends Component {
                     128GB SSD Storage
                   </button>
                   <button
-                    onClick={() => this.setState({ add: 7000 })}
+                    disabled={this.state.avalible6}
+                    onClick={() =>
+                      this.setState({
+                        add: 7000,
+                        avalible5: false,
+                        avalible6: true,
+                        avalible7: false,
+                        avalible8: false,
+                        avalible9: false
+                      })
+                    }
                     className="button is-info is-outlined is-large"
                     style={{
                       marginTop: "20px",
@@ -373,7 +412,17 @@ class Buy extends Component {
                     />
                   </button>
                   <button
-                    onClick={() => this.setState({ add: 14000 })}
+                    disabled={this.state.avalible7}
+                    onClick={() =>
+                      this.setState({
+                        add: 14000,
+                        avalible5: false,
+                        avalible6: false,
+                        avalible7: true,
+                        avalible8: false,
+                        avalible9: false
+                      })
+                    }
                     className="button is-info is-outlined is-large"
                     style={{
                       marginTop: "20px",
@@ -391,7 +440,17 @@ class Buy extends Component {
                     />
                   </button>
                   <button
-                    onClick={() => this.setState({ add: 21000 })}
+                    disabled={this.state.avalible8}
+                    onClick={() =>
+                      this.setState({
+                        add: 21000,
+                        avalible5: false,
+                        avalible6: false,
+                        avalible7: false,
+                        avalible8: true,
+                        avalible9: false
+                      })
+                    }
                     className="button is-info is-outlined is-large"
                     style={{
                       marginTop: "20px",
@@ -409,7 +468,17 @@ class Buy extends Component {
                     />
                   </button>
                   <button
-                    onClick={() => this.setState({ add: 35000 })}
+                    disabled={this.state.avalible9}
+                    onClick={() =>
+                      this.setState({
+                        add: 35000,
+                        avalible5: false,
+                        avalible6: false,
+                        avalible7: false,
+                        avalible8: false,
+                        avalible9: true
+                      })
+                    }
                     className="button is-info is-outlined is-large"
                     style={{
                       marginTop: "20px",

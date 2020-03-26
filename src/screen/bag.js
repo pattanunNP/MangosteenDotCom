@@ -4,7 +4,7 @@ import Navbar from "../component/navbar";
 import Animate from "animate.css-react";
 
 import "animate.css/animate.css";
-function Home(props) {
+function Bag(props) {
   return (
     <div>
     <Animate appear="fadeInDown" durationAppear={500} component="div">
@@ -46,4 +46,4 @@ function Home(props) {
   );
 }
 
-export default Home;
+export default Bag;
