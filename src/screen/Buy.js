@@ -65,7 +65,9 @@ class Buy extends Component {
                     <h1 className="title">What's in the Box</h1>
                   </div>
                   <img
-                    src={'https://res.cloudinary.com/dxih9tfqm/image/upload/v1585076879/images/mac_seib4o.png'}
+                    src={
+                      "https://res.cloudinary.com/dxih9tfqm/image/upload/v1585076879/images/mac_seib4o.png"
+                    }
                     alt="product"
                   />
                 </div>
@@ -96,14 +98,20 @@ class Buy extends Component {
                     }}
                   >
                     <div className="level-item has-text-centered">
+
                       <img
-                        src={'https://res.cloudinary.com/dxih9tfqm/image/upload/v1585076878/images/bag_hkylh7.png'}
+                        src={
+                          "https://res.cloudinary.com/dxih9tfqm/image/upload/v1585076878/images/bag_hkylh7.png"
+                        }
                         alt="search_btn"
                         style={{ color: "white", marginRight: "30px" }}
                       />
+
                     </div>
                     Add to Bag
+
                   </button>
+                  
                 </div>
                 <div
                   className="box"
@@ -116,7 +124,9 @@ class Buy extends Component {
                   <div className="level">
                     <div className="level-item has-text-centered">
                       <img
-                        src={'https://res.cloudinary.com/dxih9tfqm/image/upload/v1585076878/images/bag_hkylh7.png'}
+                        src={
+                          "https://res.cloudinary.com/dxih9tfqm/image/upload/v1585076878/images/bag_hkylh7.png"
+                        }
                         alt="search_btn"
                         style={{ color: "white" }}
                       />
@@ -126,7 +136,9 @@ class Buy extends Component {
                     </div>
                     <div className="level-item has-text-centered">
                       <img
-                        src={'https://res.cloudinary.com/dxih9tfqm/image/upload/v1585076879/images/box_1_vxzf6x.png'}
+                        src={
+                          "https://res.cloudinary.com/dxih9tfqm/image/upload/v1585076879/images/box_1_vxzf6x.png"
+                        }
                         alt="search_btn"
                         style={{ color: "white" }}
                       />

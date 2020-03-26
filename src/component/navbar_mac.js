@@ -52,7 +52,7 @@ class Navbarmac extends Component {
               </div>
               <div className="level-item">
                 <a
-                  href="https://www.apple.com/macbook-pro-13/macos/"
+                  href={this.props.link1}
                   className="subtitle"
                   style={{
                     fontSize: "15px",
@@ -60,12 +60,12 @@ class Navbarmac extends Component {
                     marginLeft: "50px"
                   }}
                 >
-                  macOS
+                 {this.props.text}
                 </a>
               </div>
               <div className="level-item">
                 <a
-                  href="https://www.apple.com/macbook-pro-13/specs/"
+                  href={this.props.link2}
                   className="subtitle"
                   style={{
                     fontSize: "15px",

@@ -18,6 +18,9 @@ class SurfaceProX extends Component {
               buy_id={2}
               product_name={"Surface Pro X"}
               model={"A new generation of Surface."}
+              text={'window 10'}
+              link1 ={'https://www.microsoft.com/'}
+              link2={'https://www.microsoft.com/en-th/surface/devices/surface-pro-x?activetab=techspecs#primaryR3'}
             />
           </Animate>
 
